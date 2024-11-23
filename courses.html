@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Real Estate Mastery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Real Estate Mastery Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="quiz.html">Quizzes</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="login.html#register" class="register-btn">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="courses-hero">
+        <div class="container">
+            <h1>Expand Your Real Estate Expertise</h1>
+            <p>Choose from our comprehensive selection of professional courses designed to elevate your real estate career</p>
+            <div class="course-filters">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="beginner">Beginner</button>
+                <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                <button class="filter-btn" data-filter="advanced">Advanced</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <div class="courses-grid">
+                <div class="course-card" data-category="beginner">
+                    <div class="course-image">
+                        <img src="images/course1.jpg" alt="Real Estate Fundamentals">
+                        <div class="course-badge beginner">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Real Estate Fundamentals</h3>
+                        <p>Master the basics of real estate sales and build a strong foundation.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-clock"></i> 8 Hours</li>
+                            <li><i class="fas fa-video"></i> 24 Lessons</li>
+                            <li><i class="fas fa-certificate"></i> Certificate</li>
+                        </ul>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 (245 reviews)</span>
+                            </div>
+                            <a href="enroll.html" class="enroll-button">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="intermediate">
+                    <div class="course-image">
+                        <img src="images/course2.jpg" alt="Advanced Sales Techniques">
+                        <div class="course-badge intermediate">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Advanced Sales Techniques</h3>
+                        <p>Learn advanced strategies for closing high-value real estate deals.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-clock"></i> 12 Hours</li>
+                            <li><i class="fas fa-video"></i> 36 Lessons</li>
+                            <li><i class="fas fa-certificate"></i> Certificate</li>
+                        </ul>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (189 reviews)</span>
+                            </div>
+                            <a href="enroll.html" class="enroll-button">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="advanced">
+                    <div class="course-image">
+                        <img src="images/course3.jpg" alt="Commercial Real Estate Mastery">
+                        <div class="course-badge advanced">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Commercial Real Estate Mastery</h3>
+                        <p>Dive deep into commercial property investment and management.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-clock"></i> 15 Hours</li>
+                            <li><i class="fas fa-video"></i> 42 Lessons</li>
+                            <li><i class="fas fa-certificate"></i> Certificate</li>
+                        </ul>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 (156 reviews)</span>
+                            </div>
+                            <a href="enroll.html" class="enroll-button">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="beginner">
+                    <div class="course-image">
+                        <img src="images/course4.jpg" alt="Real Estate Marketing Essentials">
+                        <div class="course-badge beginner">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Real Estate Marketing Essentials</h3>
+                        <p>Learn effective marketing strategies for property listings.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-clock"></i> 10 Hours</li>
+                            <li><i class="fas fa-video"></i> 28 Lessons</li>
+                            <li><i class="fas fa-certificate"></i> Certificate</li>
+                        </ul>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6 (178 reviews)</span>
+                            </div>
+                            <a href="enroll.html" class="enroll-button">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Advance Your Career?</h2>
+            <p>Join thousands of successful real estate professionals who have transformed their careers with our courses.</p>
+            <a href="login.html#register" class="cta-button">Get Started Today</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Real Estate Mastery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/courses.js"></script>
+</body>
+</html>
