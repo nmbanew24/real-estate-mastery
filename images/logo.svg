@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- House Icon -->
+    <path d="M25 5L45 20H40V40H10V20H5L25 5Z" fill="#4CAF50"/>
+    <!-- Text -->
+    <text x="60" y="30" font-family="Arial" font-size="20" font-weight="bold" fill="#333333">
+        Real Estate
+    </text>
+    <text x="60" y="45" font-family="Arial" font-size="16" fill="#4CAF50">
+        Mastery
+    </text>
+</svg>
