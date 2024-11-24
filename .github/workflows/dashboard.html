@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Real Estate Mastery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Real Estate Mastery Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="quiz.html">Quizzes</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="user-menu">
+                <span id="userName"></span>
+                <button id="logoutBtn" class="text-button">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Welcome Back, <span id="userNameHeader"></span>!</h1>
+                <p class="last-login">Last login: <span id="lastLogin"></span></p>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Progress Overview -->
+                <div class="dashboard-card progress-card">
+                    <div class="card-header">
+                        <h2>Your Progress</h2>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="progress-stats">
+                        <div class="stat-item">
+                            <div class="circular-progress" data-progress="0">
+                                <span class="progress-value">0%</span>
+                            </div>
+                            <span class="stat-label">Course Completion</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="circular-progress" data-progress="0">
+                                <span class="progress-value">0%</span>
+                            </div>
+                            <span class="stat-label">Quiz Performance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="dashboard-card activity-card">
+                    <div class="card-header">
+                        <h2>Recent Activity</h2>
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <ul class="activity-list" id="activityList">
+                        <li class="activity-item">
+                            <i class="fas fa-book"></i>
+                            <div class="activity-content">
+                                <p>Started "Real Estate Fundamentals"</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Recommended Courses -->
+                <div class="dashboard-card recommendations-card">
+                    <div class="card-header">
+                        <h2>Recommended for You</h2>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="course-recommendations" id="courseRecommendations">
+                        <div class="recommended-course">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Course">
+                            <div class="course-info">
+                                <h3>Advanced Property Valuation</h3>
+                                <p>Master the art of property valuation</p>
+                                <button class="button gold">Start Learning</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement Badges -->
+                <div class="dashboard-card achievements-card">
+                    <div class="card-header">
+                        <h2>Your Achievements</h2>
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="badges-grid" id="badgesGrid">
+                        <div class="badge-item locked">
+                            <i class="fas fa-medal"></i>
+                            <span>First Course Completed</span>
+                        </div>
+                        <div class="badge-item locked">
+                            <i class="fas fa-award"></i>
+                            <span>Quiz Master</span>
+                        </div>
+                        <div class="badge-item locked">
+                            <i class="fas fa-star"></i>
+                            <span>Perfect Score</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Events -->
+            <div class="dashboard-card events-card">
+                <div class="card-header">
+                    <h2>Upcoming Events</h2>
+                    <i class="fas fa-calendar"></i>
+                </div>
+                <div class="events-timeline" id="eventsTimeline">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="date">15</span>
+                            <span class="month">JUN</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Real Estate Market Analysis Webinar</h3>
+                            <p>Learn how to analyze market trends and make informed decisions</p>
+                            <button class="button">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Real Estate Mastery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

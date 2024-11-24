@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Quiz | Real Estate Mastery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Real Estate Mastery Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="quiz.html">Quizzes</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="quiz-taking-section">
+        <div class="container">
+            <div class="quiz-header">
+                <h1>Real Estate Fundamentals Quiz</h1>
+                <div class="quiz-info">
+                    <span><i class="fas fa-clock"></i> Time Remaining: <span id="timer">30:00</span></span>
+                    <span><i class="fas fa-question-circle"></i> Questions: <span id="questionCount">1/20</span></span>
+                </div>
+            </div>
+
+            <div class="quiz-container">
+                <div class="question-card">
+                    <h3 id="questionText">What is the primary purpose of a real estate comparative market analysis (CMA)?</h3>
+                    
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" name="answer" id="option1" value="a">
+                            <label for="option1">To determine property taxes</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="answer" id="option2" value="b">
+                            <label for="option2">To estimate a property's value</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="answer" id="option3" value="c">
+                            <label for="option3">To assess structural integrity</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="answer" id="option4" value="d">
+                            <label for="option4">To calculate mortgage rates</label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-navigation">
+                        <button id="prevQuestion" class="nav-button"><i class="fas fa-arrow-left"></i> Previous</button>
+                        <button id="nextQuestion" class="nav-button">Next <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 5%"></div>
+                    </div>
+                </div>
+
+                <div class="quiz-actions">
+                    <button id="submitQuiz" class="submit-button">Submit Quiz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Real Estate Mastery. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="quiz-logic.js"></script>
+</body>
+</html>

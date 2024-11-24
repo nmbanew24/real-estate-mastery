@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Complete | Real Estate Mastery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Real Estate Mastery Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="quiz.html">Quizzes</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="registration-complete">
+        <div class="container">
+            <div class="success-card">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h1>Registration Complete!</h1>
+                <p class="confirmation-message">Thank you for enrolling in Real Estate Mastery!</p>
+                
+                <div class="verification-status">
+                    <div class="status-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Verification email sent to: <strong id="userEmail">email@example.com</strong></span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Verification SMS sent to: <strong id="userPhone">+1 (XXX) XXX-XXXX</strong></span>
+                    </div>
+                </div>
+
+                <div class="next-steps">
+                    <h3>Next Steps:</h3>
+                    <ol>
+                        <li>Check your email for the verification link</li>
+                        <li>Enter the SMS code sent to your phone</li>
+                        <li>Set up your account password</li>
+                    </ol>
+                </div>
+
+                <div class="verification-form">
+                    <div class="form-group">
+                        <label for="smsCode">Enter SMS Verification Code:</label>
+                        <div class="code-input">
+                            <input type="text" maxlength="1" class="code-digit">
+                            <input type="text" maxlength="1" class="code-digit">
+                            <input type="text" maxlength="1" class="code-digit">
+                            <input type="text" maxlength="1" class="code-digit">
+                            <input type="text" maxlength="1" class="code-digit">
+                            <input type="text" maxlength="1" class="code-digit">
+                        </div>
+                    </div>
+                    <button id="verifyCode" class="submit-button">Verify Code</button>
+                </div>
+
+                <div class="support-info">
+                    <p>Didn't receive the verification?</p>
+                    <button id="resendEmail" class="text-button">Resend Email</button>
+                    <button id="resendSMS" class="text-button">Resend SMS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Real Estate Mastery. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="registration.js"></script>
+</body>
+</html>
